@@ -1,0 +1,39 @@
+CREATE TABLE business_type (
+  business_type_id serial, 
+  business_type_name character varying (30), 
+  business_type_code character varying (30), 
+  business_type_description character varying (200), 
+  created_date  date, 
+  created_by integer, 
+  updated_date date, 
+  updated_by integer
+)
+INSERT INTO business_type (
+  business_type_name, business_type_code, 
+  business_type_description
+) 
+VALUES 
+  (
+    'Limited Company', 'LIMITED_COMPANY', 
+    'Limited Company'
+  );
+select *from business_type;
+INSERT INTO business_type (
+  business_type_name, business_type_code, 
+  business_type_description
+) 
+VALUES 
+  (
+    'Sole Trade', 
+    'SOLE_TRADER','Sole Trader');  
+select *from business_type;  
+INSERT INTO business_type (
+  business_type_name, business_type_code, 
+  business_type_description
+) 
+VALUES 
+  (
+    'Self Assessment', 'SELF_ASSESSMENT', 
+    'Self Assessment'
+  );
+select *from business_type;  
